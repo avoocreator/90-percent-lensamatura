@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Listening Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="CSS Style/style-beranda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="Material/Logo Lensa Matura - Colored.png" alt="Logo" style="height: 60px; width: auto;">
+            Listening<span>Day</span>
+        </div>
+        <div class="nav-links">
+            <button id="logoutBtn" class="btn-logout">Keluar</button>
+        </div>
+    </div>
+</nav>
+
+    <main class="container">
+        <header class="welcome-section">
+            <h2 id="welcomeText">Selamat Datang, Responden</h2>
+            <p>Pilih kategori untuk memberikan rating dan aspirasi Anda.</p>
+        </header>
+
+        <section class="slider-section">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" onclick="goToAspirasi('Fasilitas Sekolah')">
+                        <img src="Material/Untitled design (54).webp" alt="Fasilitas">
+                        <div class="banner-content">
+                            <h3>Fasilitas Sekolah</h3>
+                            <p>Rating toilet, taman, dan fasilitas lainnya.</p>
+                        </div>
+                    </div>
+                     <div class="swiper-slide" onclick="goToAspirasi('Lingkungan Sekolah')">
+                        <img src="Material/Untitled design (55).webp" alt="Lingkungan Sekolah">
+                        <div class="banner-content">
+                            <h3>Sekitar Sekolah</h3>
+                            <p>Selokan, Pedagang, dan lainnya.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Java Script/script-beranda.js"></script>
+</body>
+</html>

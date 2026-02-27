@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirim Aspirasi - Listening Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS Style/style-aspirasi.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Material/Logo Lensa Matura - Colored.png" alt="Logo">
+                Listening<span>Day</span>
+            </div>
+            <a href="beranda.html" class="btn-back"><i class="fas fa-arrow-left"></i> Kembali</a>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2 id="displayKategori">Memuat Kategori...</h2>
+            <p>Berikan penilaian jujur Anda untuk membantu kami meningkatkan kualitas layanan sekolah.</p>
+        </div>
+
+        <form id="aspirasiForm">
+            <div id="questionsWrapper">
+                <div class="loading-state">
+                    <i class="fas fa-circle-notch fa-spin"></i> Memuat pernyataan...
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <button type="submit" id="submitBtn">Kirim Semua Aspirasi <i class="fas fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <script src="Java Script/script-aspirasi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
